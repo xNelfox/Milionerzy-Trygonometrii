@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+}
+
+/* gameBackground */
+.gameBackground {
+    z-index: -1;
+    opacity: .45;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.gameBackground img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* gameContainer */
+.gameContainer {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+/* mainPage */
+.mainPage {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mainPage .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.mainPage .top span {
+    color: #ffffffff;
+    text-shadow: 0 0 .75vh rgba(0, 0, 0, 1);
+    font-size: 5.5vh;
+    font-weight: 600;
+}
+
+.mainPage .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.mainPage .bottom .playBtn {
+    background-color: #212223;
+    -webkit-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    border-radius: 2.5vh;
+    color: #ffffffff;
+    font-size: 2.5vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vh;
+    height: 7.5vh;
+    padding: 2vh;
+    margin-top: 10vh;
+    transition: all .2s ease-in-out;
+}
+
+.mainPage .bottom .playBtn:hover {
+    transform: translateY(-.5vh);
+}
+
+.mainPage .bottom .playBtn:active {
+    background-color: #252627;
+}
+
+
+
+
+
+/* showPage */
+.showPage {
+    display: none;
+    width: 100%;
+    height: 100%;
+    animation: visible .5s linear;
+}
+
+.showPage .left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 75%;
+    height: 100%;
+}
+
+.showPage .left .questionBar {
+    background-color: #212223;
+    -webkit-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    border-radius: 2.5vh;
+    color: #ffffffff;
+    font-size: 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 25vh;
+    padding: 2vh;
+    margin-bottom: 2.5%;
+}
+
+.showPage .left .questionBar .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.showPage .left .questionBar .left img {
+    -webkit-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    border-radius: 1vh;
+    width: 80%;
+    height: 80%;
+}
+
+.showPage .left .questionBar .right {
+    width: 75%;
+    height: 100%;
+}
+
+.showPage .left .questionBar .right .top {
+    text-align: center;
+    font-size: 2.5vh;
+    font-weight: 600;
+    width: 100%;
+    height: 25%;
+}
+
+.showPage .left .questionBar .right .bottom {
+    width: 100%;
+    height: 75%;
+}
+
+.showPage .left .questionBar .right .bottom .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.showPage .left .questionBar .right .bottom .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.showPage .left .questionBar .right .bottom .answerBtn {
+    background-color: #313335;
+    border-radius: 1vh;
+    color: #ffffffff;
+    font-size: 2.5vh;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 75%;
+    padding: 2vh;
+    margin: 0 1vh;
+}
+
+.showPage .background {
+    background-color: hsl(0, 0%, 0%, 35%);
+    width: 25%;
+    height: 100%;
+}
+
+.showPage .right .number {
+    background-color: #212223;
+    -webkit-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    border-radius: 1vh;
+    color: #ffffffff;
+    font-size: 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 6vh;
+    margin: 2vh auto;
+}
+
+.showPage .right .number .left {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.showPage .right .number .right {
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+}
+
+#win {
+    color: #27ae60;
+}
+
+
+
+
+
+/* winningPage */
+.winningPage {
+    text-align: center;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.winningPage .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.winningPage .top span {
+    color: #ffffffff;
+    text-shadow: 0 0 .75vh rgba(0, 0, 0, 1);
+    font-size: 5.5vh;
+    font-weight: 600;
+}
+
+.winningPage .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.winningPage .bottom .playAgainBtn2 {
+    background-color: #212223;
+    -webkit-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    border-radius: 2.5vh;
+    color: #ffffffff;
+    font-size: 2.5vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vh;
+    height: 7.5vh;
+    padding: 2vh;
+    margin-top: 10vh;
+    transition: all .2s ease-in-out;
+}
+
+.winningPage .bottom .playAgainBtn2:hover {
+    transform: translateY(-.5vh);
+}
+
+.winningPage .bottom .playAgainBtn2:active {
+    background-color: #252627;
+}
+
+#loose {
+    color: #c0392b;
+}
+
+
+
+
+
+/* loosingPage */
+.loosingPage {
+    text-align: center;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.loosingPage .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.loosingPage .top span {
+    color: #ffffffff;
+    text-shadow: 0 0 .75vh rgba(0, 0, 0, 1);
+    font-size: 5.5vh;
+    font-weight: 600;
+}
+
+.loosingPage .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.loosingPage .bottom .playAgainBtn1 {
+    background-color: #212223;
+    -webkit-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    box-shadow: 0 0 1vh -.1vh rgba(0, 0, 0, 1);
+    border-radius: 2.5vh;
+    color: #ffffffff;
+    font-size: 2.5vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vh;
+    height: 7.5vh;
+    padding: 2vh;
+    margin-top: 10vh;
+    transition: all .2s ease-in-out;
+}
+
+.loosingPage .bottom .playAgainBtn1:hover {
+    transform: translateY(-.5vh);
+}
+
+.loosingPage .bottom .playAgainBtn1:active {
+    background-color: #252627;
+}
+
+
+
+
+
+/* keyframes */
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Milionerzy Trygonometrii</title>
+</head>
+<body>
+    <div class="gameBackground">
+        <img src="assets/images/background.png">
+    </div>
+
+    <div class="gameContainer">
+        <!-- MAIN PAGE -->
+        <div class="mainPage">
+            <div class="top">
+                <span>MILIONERZY<br>TRYGONOMETRII</span>
+            </div>
+            <div class="bottom">
+                <div class="playBtn">
+                    <span>ZAGRAJ</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME PAGE -->
+        <div class="showPage">
+            <div class="left">
+                <div class="questionBar">
+                    <div class="left">
+                        <img src="assets/images/triangle.png">
+                    </div>
+                    <div class="right">
+                        <div class="top">
+                            <span id="questionNumber">PYTANIE 1</span>
+                        </div>
+                        <div class="bottom">
+                            <div class="top">
+                                <div class="answerBtn" id="n1"></div>
+                                <div class="answerBtn" id="n2"></div>
+                            </div>
+                            <div class="bottom">
+                                <div class="answerBtn" id="n3"></div>
+                                <div class="answerBtn" id="n4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right background">
+                <div class="number" id="nq12">
+                    <div class="left">
+                        <span>12</span>
+                    </div>
+                    <div class="right">
+                        <span>1.000.000 Cosinusów</span>
+                    </div>
+                </div>
+                <div class="number" id="nq11">
+                    <div class="left">
+                        <span>11</span>
+                    </div>
+                    <div class="right">
+                        <span>500.000 Cosinusów</span>
+                    </div>
+                </div>
+                <div class="number" id="nq10">
+                    <div class="left">
+                        <span>10</span>
+                    </div>
+                    <div class="right">
+                        <span>250.000 Cosinusów</span>
+                    </div>
+                </div>
+                <div class="number" id="nq9">
+                    <div class="left">
+                        <span>9</span>
+                    </div>
+                    <div class="right">
+                        <span>125.000 Cosinusów</span>
+                    </div>
+                </div>
+                <div class="number" id="nq8">
+                    <div class="left">
+                        <span>8</span>
+                    </div>
+                    <div class="right">
+                        <span>75.000 Cosinusów</span>
+                    </div>
+                </div>
+                <div class="number" id="nq7">
+                    <div class="left">
+                        <span>7</span>
+                    </div>
+                    <div class="right">
+                        <span>40.000 Cosinusów</span>
+                    </div>
+                </div>
+                <div class="number" id="nq6">
+                    <div class="left">
+                        <span>6</span>
+                    </div>
+                    <div class="right">
+                        <span>20.000 Cosinusów</span>
+                    </div>
+                </div>
+                <div class="number" id="nq5">
+                    <div class="left">
+                        <span>5</span>
+                    </div>
+                    <div class="right">
+                        <span>10.000 Cosinusów</span>
+                    </div>
+                </div>
+                <div class="number" id="nq4">
+                    <div class="left">
+                        <span>4</span>
+                    </div>
+                    <div class="right">
+                        <span>5.000 Cosinusów</span>
+                    </div>
+                </div>
+                <div class="number" id="nq3">
+                    <div class="left">
+                        <span>3</span>
+                    </div>
+                    <div class="right">
+                        <span>2.000 Cosinusów</span>
+                    </div>
+                </div>
+                <div class="number" id="nq2">
+                    <div class="left">
+                        <span>2</span>
+                    </div>
+                    <div class="right">
+                        <span>1.000 Cosinusów</span>
+                    </div>
+                </div>
+                <div class="number" id="nq1">
+                    <div class="left">
+                        <span>1</span>
+                    </div>
+                    <div class="right">
+                        <span>500 Cosinusów</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOOSING PAGE -->
+        <div class="loosingPage">
+            <div class="top">
+                <span>MILIONERZY<br>TRYGONOMETRII<br><span id="loose">PRZEGRAŁEŚ</span></span>
+            </div>
+            <div class="bottom">
+                <div class="playAgainBtn1">
+                    <span>ZAGRAJ PONOWNIE</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- WINNING PAGE -->
+        <div class="winningPage">
+            <div class="top">
+                <span>MILIONERZY<br>TRYGONOMETRII<br><span id="win">WYGRAŁEŚ</span></span>
+            </div>
+            <div class="bottom">
+                <div class="playAgainBtn2">
+                    <span>ZAGRAJ PONOWNIE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
