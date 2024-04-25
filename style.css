@@ -194,6 +194,15 @@ body {
     height: 75%;
     padding: 2vh;
     margin: 0 1vh;
+    transition: all .2s ease-in-out;
+}
+
+.showPage .left .questionBar .right .bottom .answerBtn:hover {
+    transform: translateY(-.5vh);
+}
+
+.showPage .left .questionBar .right .bottom .answerBtn:active {
+    background-color: #252627;
 }
 
 .showPage .background {
